@@ -4,10 +4,12 @@ import HomePage from "./pages/HomePage";
 import Cart from "./pages/Cart.jsx";
 import About from "./pages/About";
 import Products from "./pages/Products";
+import NavBar from "./components/Navbar.jsx";
 
 function App() {
   return (
     <Router>
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
