@@ -1,7 +1,21 @@
+import { Link } from "react-router-dom";
+import heroImage from "../assets/hero-image.png";
 export default function HomePage() {
   return (
     <>
-      <h1>Home Page</h1>
+      <main className="hero-section">
+        <div className="column">
+          <h1>Productos de calidad, listos para hornear.</h1>
+          <p>
+            Ofrecemos una amplia variedad de productos congelados auténticos,
+            perfectos para tu negocio, con el sabor y la frescura que esperas.
+          </p>
+          <Link to="/products">Descubrí nuestros sabores</Link>
+        </div>
+        <div className="column">
+          <img src={heroImage} alt="Imagen de croissants" />
+        </div>
+      </main>
     </>
   );
 }

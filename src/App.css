@@ -33,3 +33,64 @@ nav a {
 nav a:hover {
   box-shadow: 0 -3px 0px #fff inset, 500px 0 0 rgba(255, 255, 255, 0.09) inset;
 }
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 8.8vh);
+}
+
+.hero-section .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  height: 100%;
+}
+
+.hero-section a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Belleza", sans-serif;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #7a6dcc;
+  color: white;
+  padding: 10px 20px;
+  max-width: fit-content;
+  border-radius: 5px;
+}
+
+.hero-section img {
+  width: 750px;
+}
+
+.hero-section h1 {
+  font-family: "Belleza", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.hero-section p {
+  font-size: 26px;
+  font-weight: 350;
+  margin-top: 10px;
+  line-height: 1.15em;
+}
+
+.product{
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.product img{
+  width: 50%;  /* La imagen ocupa todo el ancho del contenedor */
+  height: 50%; /* La imagen ocupa todo el alto del contenedor */
+  object-fit: cover; /* Hace que la imagen se recorte sin estirarse */
+}
