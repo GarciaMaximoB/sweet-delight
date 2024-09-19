@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import heroImage from "../assets/hero-image.png";
+import About from "../components/About";
+import Footer from "../components/footer/Footer.jsx";
 export default function HomePage() {
   return (
     <>
@@ -16,6 +18,12 @@ export default function HomePage() {
           <img src={heroImage} alt="Imagen de croissants" />
         </div>
       </main>
+
+      <section className="about-section">
+        <About />
+      </section>
+
+      <Footer />
     </>
   );
 }
